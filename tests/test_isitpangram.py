@@ -36,3 +36,13 @@ def test_command_line_interface():
     help_result = runner.invoke(cli.main, ['--help'])
     assert help_result.exit_code == 0
     assert '--help  Show this message and exit.' in help_result.output
+
+
+def test_sentence_empty():
+    """Test an empty sentence."""
+    assert isitpangram.is_pangram('') == False
+
+
+def test_recognizes_a_perfect_lower_case_pangram():
+    """Test a perfect lower case pangram."""
+    assert isitpangram.is_pangram('abcdefghijklmnopqrstuvwxyz') == True
