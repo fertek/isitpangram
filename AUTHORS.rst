@@ -2,8 +2,8 @@
 Credits
 =======
 
-Development Lead
-----------------
+Development
+-----------
 
 * Jan Feřtek <janfertek@gmail.com>
 
